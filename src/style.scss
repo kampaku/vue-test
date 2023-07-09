@@ -18,6 +18,12 @@
   --color-lightgrey: #f7f7f8;
   --color-grey: #acada5;
   --color-dark: #18191b;
+
+  --container-width: 1588px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -29,5 +35,4 @@ body {
 #app {
   width: 100%;
   margin: 0 auto;
-  padding: 2rem;
 }

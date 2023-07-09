@@ -1,11 +1,19 @@
 <template>
-  <div>
-    <Header />
+  <div class="app">
+    <app-header />
   </div>
 </template>
 
 <script setup>
-import Header from './components/Header.vue'
+import AppHeader from './components/AppHeader.vue'
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+</style>
