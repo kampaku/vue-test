@@ -1,0 +1,33 @@
+:root {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --color-white: #ffffff;
+  --color-platinum: #e9eaec;
+  --color-primary: #c6af66;
+  --color-darkgrey: #424343;
+  --color-input: #63636f;
+  --color-lightgrey: #f7f7f8;
+  --color-grey: #acada5;
+  --color-dark: #18191b;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
