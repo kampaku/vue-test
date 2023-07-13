@@ -2,13 +2,25 @@
   <header class="header">
     <div class="header__wrapper">
       <div class="header__logo">
-        <logo />
+        <logo theme="dark"/>
       </div>
       <div class="header__info">
-        <location class="header__location" city="г. Ставрополь," street="ул. Пушкина 272"></location>
-        <div class="header__messangers">
-          <messanger-button :icon="Telegram" link="https://t.me/+7123456789" title="Telegram"></messanger-button>
-          <messanger-button :icon="WhatsApp" link="https://wa.me/7123456789" title="WhatsApp"></messanger-button>
+        <location
+          class="header__location"
+          city="г. Ставрополь,"
+          street="ул. Пушкина 272"
+        ></location>
+        <div class="header__messengers">
+          <messenger-button
+            :icon="Telegram"
+            link="https://t.me/+7123456789"
+            title="Telegram"
+          ></messenger-button>
+          <messenger-button
+            :icon="WhatsApp"
+            link="https://wa.me/7123456789"
+            title="WhatsApp"
+          ></messenger-button>
         </div>
         <contact-tel></contact-tel>
       </div>
@@ -24,7 +36,7 @@ import Logo from './Logo.vue'
 import Location from './Location.vue'
 import Telegram from '../assets/images/socials/Telegram.svg'
 import WhatsApp from '../assets/images/socials/WhatsApp.svg'
-import MessangerButton from './MessangerButton.vue'
+import MessengerButton from './MessengerButton.vue'
 import ContactTel from './ContactTel.vue'
 import AppMenu from './AppMenu.vue'
 </script>
@@ -48,10 +60,14 @@ import AppMenu from './AppMenu.vue'
     justify-content: center;
   }
 
-  &__messangers {
+  &__messengers {
     display: flex;
     gap: 8px;
     margin-left: 48px;
+
+    @media screen and (max-width: 426px) {
+      display: none;
+    }
   }
 
   &__info {
@@ -60,10 +76,20 @@ import AppMenu from './AppMenu.vue'
     gap: 48px;
   }
 
+  &__location {
+    @media screen and (max-width: 426px) {
+      display: none;
+    }
+  }
+
   &__menu {
     margin-top: 20px;
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 426px) {
+      display: none;
+    }
   }
 }
 </style>

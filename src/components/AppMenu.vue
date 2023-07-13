@@ -30,6 +30,7 @@ const menuItems = ref([
   line-height: 28px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1318px;
   width: 100%;
 }
