@@ -1,6 +1,6 @@
 :root {
   font-family: 'Lato', sans-serif;
-  line-height: 1.5;
+  line-height: 1.2;
   font-weight: 400;
   background-color: #ffffff;
 
@@ -20,6 +20,8 @@
   --color-dark: #18191b;
 
   --container-width: 1588px;
+  --border-radius-s: 4px;
+  --border-radius: 16px;
 }
 
 * {
